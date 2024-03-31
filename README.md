@@ -38,7 +38,7 @@ cyclist. Provide details about the car, the cyclist, the type of road, and the w
 ```
 
 ## LiteLLM
-Additional directions can be found on the official [LiteLLM website](https://github.com/BerriAI/litellm). 
+Additional directions can be found on the official [LiteLLM website](https://docs.litellm.ai/docs/). 
 1. Install Dependencies:
    ```
    pip install Flask
