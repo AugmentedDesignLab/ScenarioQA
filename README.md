@@ -32,13 +32,13 @@ The ontology formation is a call to GPT multiple times after being given a seed 
 ### Scenario Creation 
 A very simple call to guidance using or modifying this scenario will generate high-quality detailed scenarios that can be used within the scope of this project.
 ```
-// Generate a scenario where a car crash occurred at an intersection between a car and a bike. The car was taking a right
-// at an intersection when the traffic light was red, however, the car did not check its blindspot and crashed into the 
-// cyclist. Provide details about the car, the cyclist, the type of road, and the weather.
+PROMPT: Generate a scenario where a car crash occurred at an intersection between a car and a bike. The car was taking a right
+at an intersection when the traffic light was red, however, the car did not check its blindspot and crashed into the 
+cyclist. Provide details about the car, the cyclist, the type of road, and the weather.
 ```
 
 ## LiteLLM
-Additional directions can be found on the official [LiteLLM website] (https://github.com/BerriAI/litellm). 
+Additional directions can be found on the official [LiteLLM website](https://github.com/BerriAI/litellm). 
 1. Install Dependencies:
    ```
    pip install Flask
