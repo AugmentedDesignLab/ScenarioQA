@@ -3,11 +3,7 @@ from litellm import completion
 from litellm import completion_with_retries 
 import os
 
-## set ENV variables
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["HUGGINGFACE_API_KEY"] = "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" 
-os.environ["COHERE_API_KEY"] = "stUXMZWW4Og2E6x5XLAOXvLMZjjQwJUcWGHNbJ7c" ## REPLACE THIS
-os.environ["GEMINI_API_KEY"] =  "AIzaSyDPSL6FngK-O45BgXn18rx5-4eVEJ4HAXw"
+## set ENV variables on your machine.
 
 messages = [{ "content": "Hello, how are you?","role": "user"}]
 

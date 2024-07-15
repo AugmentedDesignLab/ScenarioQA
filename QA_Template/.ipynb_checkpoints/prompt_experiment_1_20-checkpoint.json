@@ -1,0 +1,152 @@
+{
+    "Experiment_1":{
+        "Prompt":'''
+        You are a road safety scientist at a vehicle company with a background in traffic engineering, 
+    civil engineering and autonomous vehicles. I have a road driving scenario ontology as shown below (in DOT format). 
+    
+    digraph Ontology { 
+    EnvironmentalConditions -> WeatherConditions;
+    EnvironmentalConditions -> LightingConditions;
+    EnvironmentalConditions -> RoadSurfaceConditions;
+    EnvironmentalConditions -> TimeOfDay;
+    EnvironmentalConditions -> Season;
+    RoadTopologyAndTrafficInfrastructure -> RoadType;
+    RoadTopologyAndTrafficInfrastructure -> RoadSigns;
+    RoadTopologyAndTrafficInfrastructure -> TrafficLights;
+    RoadTopologyAndTrafficInfrastructure -> PedestrianCrossings;
+    RoadTopologyAndTrafficInfrastructure -> Junction -> Roundabout;
+    RoadTopologyAndTrafficInfrastructure -> Junction -> Intersection;
+    RoadTopologyAndTrafficInfrastructure -> RoadMarkings;
+    RoadTopologyAndTrafficInfrastructure -> SpeedLimit;
+    RoadTopologyAndTrafficInfrastructure -> TrafficCongestion;
+    RoadTopologyAndTrafficInfrastructure -> RoadWorks;
+    RoadTopologyAndTrafficInfrastructure -> ParkingZones;
+    RoadTopologyAndTrafficInfrastructure -> Bridge;
+    RoadTopologyAndTrafficInfrastructure -> Tunnel;
+    RoadTopologyAndTrafficInfrastructure -> TrafficCameras;
+    RoadTopologyAndTrafficInfrastructure -> SchoolZones;
+    TrafficParticipantAndBehavior -> Vehicle -> AutonomousVehicle;
+    TrafficParticipantAndBehavior -> Vehicle -> ManualVehicle;
+    TrafficParticipantAndBehavior -> Vehicle -> EmergencyVehicle;
+    TrafficParticipantAndBehavior -> Vehicle -> CommercialVehicle;
+    TrafficParticipantAndBehavior -> Vehicle -> Motorcycle;
+    TrafficParticipantAndBehavior -> Vehicle -> PublicTransportation;
+    Vehicle -> VehicleSafetyFeatures;
+    Vehicle -> VehicleSize;
+    Vehicle -> VehicleType;
+    Vehicle -> VehicleAge;
+    Vehicle -> VehicleCondition;
+    Vehicle -> VehicleLoad;
+    TrafficParticipantAndBehavior -> Pedestrian;
+    TrafficParticipantAndBehavior -> Cyclist;
+    TrafficParticipantAndBehavior -> DriverBehavior;
+    TrafficParticipantAndBehavior -> PedestrianBehavior;
+    TrafficParticipantAndBehavior -> CyclistBehavior;
+    TrafficParticipantAndBehavior -> TrafficRulesAdherence;
+    TrafficParticipantAndBehavior -> Animal;
+    TrafficParticipantAndBehavior -> DriverDistraction;
+    TrafficParticipantAndBehavior -> DriverFatigue;
+    TrafficParticipantAndBehavior -> DriverExperience;
+    TrafficParticipantAndBehavior -> DriverVision;
+    TrafficParticipantAndBehavior -> DriverIntoxication;
+    TrafficParticipantAndBehavior -> DriverAge;
+    }
+    
+    Here is some additional information about multiple-choice question formation as well as Bloom's taxonomy: 
+    
+    A multiple-choice question is a collection of three components aimed at testing a student’s understanding of a 
+    certain topic, given a particular context of what the student is expected to know. The topic, as well as the context 
+    of the topic, will be provided to generate effective multiple-choice questions. The three parts of a 
+    multiple-choice question are as follows: a Stem, a Correct Answer, and three Distractors. There must always be only 
+    one correct answer and only three distractors.
+
+    The stem is relevant to the question the student will attempt to answer, as well as the relevant context necessary in order 
+    to answer the question. It may be in the form of a question, an incomplete statement, or a scenario. The stem should 
+    focus on assessing the specific knowledge or concept the question aims to evaluate.
+
+    The Correct Answer refers to the correct, undisputable answer to the question.
+
+    A Distractor is an incorrect answer to the question in the stem and adheres to the following properties. […] Use 
+    “None of the Above” or “All of the Above” style answer choices sparingly. These answer choices have been shown to, in
+    general, be less effective at measuring or assessing student understanding.
+
+    Multiple-choice questions should be clear, concise, and grammatically correct statements. Make sure the questions are 
+    worded in a way that is easy to understand and does not introduce unnecessary complexity or ambiguity. Students should 
+    be able to understand the questions without confusion. The question should not be too long, and allow most students to 
+    finish in less than five minutes. This means adhering to the following properties.
+
+
+
+    Blooms’ Taxonomy and Action Verbs:
+    Multiple-choice questions must be well aligned to the learning objectives they are intended to assess students’ 
+    knowledge on. This implies that they must assess skills at the right cognitive level corresponding to the Bloom’s 
+    taxonomy categorization of the learning objective. Bloom’s Taxonomy offers a framework for categorizing the depth of 
+    learning, and it provides guidance on selecting appropriate action verbs when writing learning objectives. Here are the 
+    six levels of Bloom’s taxonomy and their definitions:
+    
+    Remember - This level involves retrieving, recognizing, and recalling relevant knowledge from long-term memory.
+    
+    Understand - At this level, learners construct meaning from oral, written, and graphic messages through interpreting,
+    exemplifying, classifying, summarizing, inferring, comparing, and explaining.
+    
+    Apply - This level requires learners to carry out or use a procedure through executing or implementing it. 
+    
+    Analyze - At this level, learners break material into constituent parts, determine how the parts relate to one another
+    and to an overall structure or purpose through differentiating, organizing.
+    
+    Evaluate - This level involves making judgments based on criteria and standards through checking and critiquing. 
+    
+    Create - At this level, learners put elements together to form a coherent or functional whole, or they reorganize 
+    elements into a new pattern or structure through generating.
+
+    
+    Given information about the traffic related ontology, as well as question formation guidelines and Bloom's taxonomy, 
+    would you be able to create multiple-choice questions for EACH TYPE OF INFERENCE provided below that fulfill the MCQ 
+    guidelines as well as Bloom's taxonomy skills. The below example shows the type of inference relation as well as an example 
+    of the types of questions asked with that particular relation. For option D, make sure the option is similar to the answer to the question, however incorrect. 
+
+    Relation -> Formulated question example
+    AtLocation -> Where would I not want a fox? A. hen house, B. england, C. mountains, D. ... 
+    Causes -> What is the hopeful result of going to see a play? A. being entertained, B. meet, C. sit, D. ... 
+    CapableOf -> Why would a person put flowers in a room with dirty gym socks? A. smell good, B. many colors, C. continue to grow , D. ... 
+    Antonym -> Someone who had a very bad flight might be given a trip in this to make up for it? A. first class, B. reputable, C. propitious , D. ... 
+    HasSubevent -> How does a person begin to attract another person for reproducing? A. kiss, B. genetic mutation, C. have sex , D. ... 
+    HasPrerequisite -> If I am tilting a drink toward my face, what should I do before the liquid spills over? A. open mouth, B. eat first, C. use glass , D. ... 
+    CausesDesire -> What do parents encourage kids to do when they experience boredom? A. read book, B. sleep, C. travel , D. ... 
+    Desires -> What do all humans want to experience in their own home? A. feel comfortable, B. work hard, C. fall in love , D. ... 
+    PartOf -> What would someone wear to protect themselves from a cannon? A. body armor, B. tank, C. hat , D. ... 
+    HasProperty -> What is a reason to pay your television bill? A. legal, B. obsolete, C. entertaining , D. ...
+
+    Generate a traffic scenario from the concepts and relations listed above. Then generate three multiple choice questions in accordance with the details above.
+    Focus on the Bloom's taxonomy term "understand" detailed above. Focus on the commonsense inference AtLocation detailed above. 
+    Generate only the scenario and the multiple choice questions.
+        ''',
+        "Response":"""
+        Scenario:
+        You are driving an autonomous vehicle on a busy city street during the evening rush hour. The weather is clear, but the sun is setting, causing some glare. The road is a four-lane city street with a speed limit of 35 mph. There are traffic lights at each intersection, pedestrian crossings, and road signs indicating school zones and parking zones. The vehicle is equipped with safety features such as automatic braking, lane-keeping assist, and adaptive cruise control. 
+        
+        Question 1:
+        Where would you expect to find traffic lights in this scenario?
+        A. On the highway
+        B. At each intersection
+        C. In the school zones
+        D. In the parking zones
+        
+        Question 2:
+        Where would you expect to find pedestrian crossings in this scenario?
+        A. On the highway
+        B. At each intersection
+        C. In the school zones
+        D. In the parking zones
+        
+        Question 3:
+        Where would you expect to find road signs indicating school zones in this scenario?
+        A. On the highway
+        B. At each intersection
+        C. Near schools
+        D. In the parking zones
+        """},
+    "Experiment_2": {
+        "Prompt":
+    }
+}
